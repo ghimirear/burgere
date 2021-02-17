@@ -1,0 +1,124 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: wheat;
+    transform: translate(10%);
+    overflow-x: hidden;
+}
+.img-container{
+    transform: translate(50%, 10%);
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.list-item{
+    list-style-type: none;
+    background-color: orange;
+    height: 40px;
+    width: 40%;
+    color: white;
+    font-size: 1.5rem;
+    margin: 10px;
+    margin-left: 40px;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+    border-radius: 50px;
+    line-height: 37px;
+}
+.list-item:hover{
+    box-shadow: 0 2px 2px 1px rgb(61, 57, 57);
+    font-size: 1.7rem;
+}
+.burger_img{
+    height: 400px;
+    width: 400px;
+    
+}
+.container{
+    width: 49vw;
+    align-items: center;
+    justify-content: center;
+}
+.ul-list{
+    padding: 30px;
+    margin: 10px;
+}
+.devour-burger{
+    all:unset;
+    height: 40px;
+    width: 80px;
+    border-radius: 50px;
+    background-color: rgb(214, 226, 53);
+    color: floralwhite;
+    float: right;
+   
+}
+.devour-burger:hover{
+    box-shadow: 0 0 2px 2px black;
+    background-color: rgb(155, 145, 111);
+    color: whitesmoke;
+    transform: translate(10%, 5%);
+}
+.delete-burger{
+    all:unset;
+    height: 40px;
+    width: 80px;
+    border-radius: 50px;
+    background-color: rgb(214, 226, 53);
+    color: floralwhite;
+    float: right;
+   
+}
+.delete-burger:hover{
+    box-shadow: 0 0 2px 2px black;
+    background-color: rgb(190, 169, 122);
+    color: whitesmoke;
+    transform: translate(10%, 5%); 
+}
+.form-container{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transform: translate(30%);
+}
+.burger-name{
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+#burger{
+    all: unset;
+   width:30%;
+   height: 50px;
+   font-size: 1.5rem;
+   background-color: white;
+   border-radius: 3px;
+   box-shadow: 0 2px 2px 2px rgb(161, 157, 157);
+   margin-left: 5px;
+}
+#burger:hover{
+    box-shadow: 0 1px 2px 2px rgb(147, 167, 167)
+}
+.submit-button{
+    all: unset;
+    background-color: white;
+    color: black;
+    height: 50px;
+    width: 100px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    background-color: bisque;
+    box-shadow: 0px 2px 2px 2px rgb(147, 167, 167);
+    font-weight: 550;
+    margin-left: 5px;
+}
+.submit-button:hover{
+    background-color: rgb(167, 166, 147);
+    color: whitesmoke;
+}
+h1{
+    margin-left: 60px;
+    
+}
