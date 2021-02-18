@@ -15,6 +15,17 @@ router.get('/', (req, res) => {
     res.render('index', hbsObject);
   });
 });
+// if unable to get home.
+
+router.get('', (req, res) => {
+  burgers.all((data) => {
+    const hbsObject = {
+      burgers: data,
+    };
+    console.log(hbsObject);
+    res.render('index', hbsObject);
+  });
+});
 
 router.post('/api/burgers', (req, res) => {
   burgers.create(['burger_name', 'devoured'], [req.body.name, req.body.devoured],
