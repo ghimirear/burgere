@@ -1,18 +1,25 @@
 {
   "name": "burgere",
   "version": "1.0.0",
-  "description": "",
+  "description": "is a simple app powereb by\r - node, \r - mysql,\r - express and \r - express-handlebars.",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "server.js"
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ghimirear/burgere.git"
   },
   "author": "",
   "license": "ISC",
- 
+  "bugs": {
+    "url": "https://github.com/ghimirear/burgere/issues"
+  },
+  "homepage": "https://github.com/ghimirear/burgere#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "express-handlebars": "^5.2.0",
+    "express-handlebars": "^5.2.1",
     "mysql": "^2.18.1"
   }
 }
