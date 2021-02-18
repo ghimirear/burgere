@@ -1,4 +1,4 @@
-// Import MySQL connection.
+// Importing MySQL connection.
 const connection = require('./connection.js');
 
 // Helper function for SQL syntax to add question marks (?, ?, ?) in query
@@ -21,7 +21,7 @@ const objToSql = (ob) => {
     let value = ob[key];
     // Check to skip hidden properties
     if (Object.hasOwnProperty.call(ob, key)) {
-      // If string with spaces, add quotations (Lana Del Grey => 'Lana Del Grey')
+      // If string with spaces, add quotations 
       if (typeof value === 'string' && value.indexOf(' ') >= 0) {
         value = `'${value}'`;
       }
@@ -39,6 +39,7 @@ const orm = {
 
 
   all(tableInput, cb) {
+    // selecting all the data from database speified table
     const queryString = `SELECT * FROM ${tableInput};`;
     connection.query(queryString, (err, result) => {
       if (err) {
@@ -50,6 +51,7 @@ const orm = {
 
   
   create(table, cols, vals, cb) {
+    // Inserting data to table.
     let queryString = `INSERT INTO ${table}`;
 
     queryString += ' (';
@@ -72,7 +74,7 @@ const orm = {
 
 
 
-  // An example of objColVals would be {name: panther, sleepy: true}
+  // An example of objColVals would be {name: Bacon cheese, devoured: false}
   update(table, objColVals, condition, cb) {
 
 
@@ -96,7 +98,7 @@ const orm = {
   },
 
 
-
+  // To delete data from table with specified codition.
   delete(table, condition, cb) {
     let queryString = `DELETE FROM ${table}`;
     queryString += ' WHERE ';

@@ -7,14 +7,15 @@ document.addEventListener('DOMContentLoaded', (event) => {
     // UPDATE
     const changeDevouredState = document.querySelectorAll('.devour-burger');
   
-    // Set up the event listener for the create button
+    // Set up the event listener for the devour button
     if (changeDevouredState) {
         changeDevouredState.forEach((button) => {
         button.addEventListener('click', (e) => {
           // Grabs the id of the element that goes by the name, "id"
           const id = e.target.getAttribute('data-id');
           
-  
+          // hardcoding devoured state because We have not specified the devoured condtion.
+          // on devour button click state need to be changed and we are not revorting back to undovoured state.
           const toDevour = {
             devoured : true,
           };
@@ -32,7 +33,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
             // Check that the response is all good
             // Reload the page so the user can see the new quote
             if (response.ok) {
-              console.log(`changed sleep to: devoured`);
+              console.log(`changed devour to: devoured`);
               location.reload('/');
             } else {
               alert('something went wrong!');
@@ -49,11 +50,13 @@ document.addEventListener('DOMContentLoaded', (event) => {
       createBurgerBtn.addEventListener('submit', (e) => {
         e.preventDefault();
         if(document.getElementById('burger').value.trim() === ''){
+          // return statement if input value is empty.
             return;
         };
-        // Grabs the value of the textarea that goes by the name, "quote"
+        // Grabs the value of the textarea that goes by the name,
         const newBurger = {
           name: document.getElementById('burger').value.trim(),
+          // providing devoured state false so that user can devour later with the devour button
           devoured : false,
         };
   
@@ -71,7 +74,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
           // Empty the form
           document.getElementById('burger').value = '';
   
-          // Reload the page so the user can see the new quote
+          // Reload the page so the user can see the new entry
           console.log('Created a new burger!');
           location.reload();
         });
@@ -83,7 +86,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     // DELETE
   const deleteBurgerBtns = document.querySelectorAll('.delete-burger');
 
-  // Set up the event listeners for each delete button
+  // Setting up the event listeners for each deleteb-burger button
   deleteBurgerBtns.forEach((button) => {
     button.addEventListener('click', (e) => {
       const id = e.target.getAttribute('data-id');

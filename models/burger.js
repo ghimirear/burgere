@@ -13,6 +13,7 @@ const burger = {
     orm.update('burgers', objColVals, condition, (res) => cb(res));
   },
   delete(condition, cb) {
+    // calling orm delete function with table name burgers
     orm.delete('burgers', condition, (res) => cb(res));
   },
 };
