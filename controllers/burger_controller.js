@@ -17,7 +17,7 @@ router.get('/', (req, res) => {
 });
 // if unable to get home.
 
-router.get('', (req, res) => {
+router.get('*', (req, res) => {
   burgers.all((data) => {
     const hbsObject = {
       burgers: data,
