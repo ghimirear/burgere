@@ -5,19 +5,11 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "start": "server.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ghimirear/burgere.git"
-  },
-  "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ghimirear/burgere/issues"
-  },
-  "homepage": "https://github.com/ghimirear/burgere#readme",
+ 
   "dependencies": {
     "express": "^4.17.1",
     "express-handlebars": "^5.2.0",
