@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/ghimirear/burgere/issues"
   },
-  "homepage": "https://github.com/ghimirear/burgere#readme",
+ 
   "dependencies": {
     "express": "^4.17.1",
     "express-handlebars": "^5.2.1",
