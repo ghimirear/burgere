@@ -6,9 +6,6 @@
 - [Deployment](#Deployment)
 - [Screenshots](#Screenshots)
 
-##### Burger App (Eat-Da_burger),
-is a simple app powereb by
-
 # Description
 This have one input from where you can add new burger to the list,
 list come with devour button. The devour button is serve as a boolean,
