@@ -23,7 +23,7 @@ On both instance tis app save the data in database with name, id and state of de
 - create a database with one table with the help of provided schema and seeds.
 - and run the server.js file in terminal and open the port that server is listening to.
 # Deployment
-[Deployed-App](https://boiling-wave-86974.herokuapp.com/)
+- deployed app [https://boiling-wave-86974.herokuapp.com/](https://boiling-wave-86974.herokuapp.com/)
 # ScreenShots
 ![demo-image](./public/assets/img/demo-image.JPG)
 
